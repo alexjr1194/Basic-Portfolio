@@ -4,26 +4,50 @@ div#header{
 	display: block;
 	padding: 25px;
 	border-bottom: 1px solid #ddd;
-	width: 960px;
+	width: auto;
+}
+
+html{
+	height: 100%;
+}
+
+div.content: {
+	flex: 1 0 auto;
+	padding: 20px;
 }
 
 body {
 	max-width: 960px;
-	height: auto;
+	height: 100%;
 	position: relative;
 	margin: auto;
 	background-image: url(../images/playstation-pattern.png);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
-p#main{
+div.par{
 	color: #777777;
 	text-indent: 25px;
 	position: relative;
 	text-align: right top;
-	bottom: 40px;
+	bottom: 1px;
+	left: 1px;
+	text-align: left;
+	margin: O 0 1px 0;
+	float: left;
 }
 
+.inline {
+	display: inline;
+}
 
+.inline:after {
+	content: '';
+	display: block;
+	margin-bottom: 1rem;
+}
 
 h1#logo {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -89,26 +113,57 @@ div#main{
 	float: center;
 	background-color: #ffffff;
 	border: 1px #ffffff;
-	margin: 10px 10px 10px 10px;
-
+	margin: 5px 5px 5px 5px;
+	flex: 1 0 auto;
 }
 
 h1#title{
-	border-bottom: solid;
+	border-bottom: solid #e5e5e5;
 	float: left top;
 	position: relative;
-	bottom: 40px;
+	bottom: 20px;
 	right: 25px;
 	font-size: 25px;
+	color: #4aaaa5;
 }
 
 img#me{
-	position: relative;
+	/*position: relative;*/
 	float: left;
-	bottom: 40px;
-	right: 20px;
+	/*bottom: 40px;*/
+	/*right: 20px;*/
+	margin: 0 15px 15px 0;
+	width: 140px;
+}
+
+div#connect {
+	padding: 10px;
+	background-color: #ffffff;
+	position: relative;
+	float: right top;
+	left: 725px;
+	border: 1px solid #ffffff;
+	width: 325px;
+	bottom: 308px;
 
 }
 
+p#cm {
+	text-align: center;
+	border-bottom: solid #e5e5e5; 
+	color: #4aaaa5;
+}
 
+.footer{
+	flex-shrink: 0;
+	padding: 20px;
+	
+}
 
+footer h6{
+	text-align: center;
+	display: block;
+	background-color: #666666;
+	width: auto;
+	padding: 20px;
+}
