@@ -1,5 +1,5 @@
 html, body {
-	height: 100%
+	height: 100%;
 }
 
 body {
@@ -11,10 +11,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	margin: 0 auto;
+	float: none;
+	max-width: 960px;
+
 }
 
 div.container {
-	max-width: 960px;
 	width: 960px;
 	flex: 1 0 auto;
 	padding: 20px;
@@ -181,6 +184,7 @@ header.cm {
 }
 
 div.footer {
+	max-width: 960px;
 	position: absolute;
 	bottom:-20px;
 	display: block;
