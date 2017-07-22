@@ -147,7 +147,7 @@ p {
 
 div.connect {
 	float: right;
-	position: absolute;
+	position: relative;
 	display: block;
 	right: -65px;
 	top: 172px;
