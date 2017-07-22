@@ -1,80 +1,80 @@
-div#header{
-	height: 72px;
-	background-color: #ffffff;
-	display: block;
-	padding: 25px;
-	border-bottom: 1px solid #ddd;
-	width: auto;
+html, body {
+	height: 100%
 }
 
-html{
-	height: 100%;
+body {
+	background-image: url(../images/playstation-pattern.png);
+	/*max-width: 960px;*/
+	/*width: auto;*/
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
-div.content: {
+div.container {
+	max-width: 960px;
+	width: 960px;
 	flex: 1 0 auto;
 	padding: 20px;
 }
 
-body {
+a{
+	text-decoration: none;
+}
+
+div.header {
+	position: absolute;
 	max-width: 960px;
-	height: 100%;
-	position: relative;
-	margin: auto;
-	background-image: url(../images/playstation-pattern.png);
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-
-div.par{
-	color: #777777;
-	text-indent: 25px;
-	position: relative;
-	text-align: right top;
-	bottom: 1px;
-	left: 1px;
-	text-align: left;
-	margin: O 0 1px 0;
-	float: left;
-}
-
-.inline {
-	display: inline;
-}
-
-.inline:after {
-	content: '';
 	display: block;
-	margin-bottom: 1rem;
-}
-
-h1#logo {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	background-color: #4aaaa5;
-	display: block;
+	background-color: #ffffff;
+	height: 72px;
+	width: 100%;
 	padding: 25px;
-	position: relative;
-	width: auto;
-	height: auto;
-	left: 50px;
-	float: left;
+	border: 1px solid #cccccc;
+}
+
+header.logo {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 25px;
 	color: #ffffff;
 	border-color: #cccccc;
-	font-size: 25px;
+	background-color: #4aaaa5;
+	position: relative;
+	float: left;
+	padding: 25px;
+	display: block;
+	top: 23px;
+	left: 25px;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #ffffff;
-	float: right;
+li {
+	float: left;
+	border-right: dashed teal;
+	padding: 10px;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul.nav {
 	position: relative;
 	float: right;
-	right: 50px;
-	top: 15px;
-	list-style-type: none;
+	max-width: 330px;
+	width: 100%;
+	display: block;
+	height: 100%;
+	top: 61px;
+}
+
+li a {
+	color: #777777;
+	text-align: center;
+	padding: 10px 16px;
+}
+
+li a:hover{
+	background-color: #333;
 }
 
 .active {
@@ -82,88 +82,163 @@ ul {
 	color: white;
 }
 
-li{
-	float: left;
-	border-right: solid black;
-}
-
-li a {
-	display: block;
-	 color: "white";
-	 text-align: center;
-	 padding: 14px 16px;
-	 text-decoration: none;
-}
-
-li a:hover {
-	background-color: #333;
-}
-
-ul#nav{
+div.main {
+	max-width: 650px;
+	max-height: 650px;
+	width: 100%;
+	height: 400px;
 	position: relative;
-	float: right;
-}
-
-div#main{
-	position: relative;
-	padding: 25px 2px 1px 39px;
-	overflow: hidden;
-	height: auto;
-	width: 650px;
-	float: center;
-	background-color: #ffffff;
-	border: 1px #ffffff;
-	margin: 5px 5px 5px 5px;
-	flex: 1 0 auto;
-}
-
-h1#title{
-	border-bottom: solid #e5e5e5;
-	float: left top;
-	position: relative;
-	bottom: 20px;
-	right: 25px;
-	font-size: 25px;
-	color: #4aaaa5;
-}
-
-img#me{
-	/*position: relative;*/
-	float: left;
-	/*bottom: 40px;*/
-	/*right: 20px;*/
-	margin: 0 15px 15px 0;
-	width: 140px;
-}
-
-div#connect {
 	padding: 10px;
 	background-color: #ffffff;
-	position: relative;
-	float: right top;
-	left: 725px;
-	border: 1px solid #ffffff;
-	width: 325px;
-	bottom: 308px;
-
+	border: 1px solid #dddddd;
+	overflow: hidden;
+	float: left;
+	top: 150px;
+	left: 50px;
+	color: #777777;
 }
 
-p#cm {
-	text-align: center;
-	border-bottom: solid #e5e5e5; 
+.main#portfolio {
+	height: 625px;
+}
+
+header.title {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 25px;
 	color: #4aaaa5;
+	border-bottom: 1px solid #e5e5e5;
+	float: left;
+	position: absolute;
+	width: 95%;
+	padding-bottom: 15px;
 }
 
-.footer{
-	flex-shrink: 0;
-	padding: 20px;
-	
+img#me {
+	position: relative;
+    float: left;
+    top: 40px;
+    padding-right: 20px;
 }
 
-footer h6{
+div.aboutme {
+	text-indent: 25px;
+	position: relative;
+	float: left;
+	padding: 25px;
+}
+
+p {
+	position: relative;
+	top: 38px;
+}
+
+/* .inline {
+	display: inline;
+} */
+
+.inline:after {
+	content: '';
+	display: block;
+	margin-bottom: 1rem;
+}
+
+div.connect {
+	float: right;
+	position: absolute;
+	display: block;
+	right: -65px;
+	top: 172px;
+	max-width: 270px;
+	width: 100%;
+	background-color: #ffffff;
+	height: 150px;
+	border: 1px solid #dddddd;
+}
+
+header.cm {
+	padding: 10px;
 	text-align: center;
+	color: #4aaaa5;
+	font-size: 25px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#github {
+	position: relative
+	top: 15px;
+}
+
+#link {
+	position: relative;
+    left: 30px;
+    top: 15px;
+}
+
+#stack {
+	left: 60px;
+    position: relative;
+    top: 15px;
+}
+
+div.footer {
+	position: absolute;
+	bottom:-20px;
 	display: block;
 	background-color: #666666;
-	width: auto;
+	width: 100%;
 	padding: 20px;
+	border-top: 5px solid #62a8a4;
+	flex-shrink: 0;
+}
+
+footer {
+	text-align: center;
+}
+
+a#hangman {
+	position: absolute;
+	top: 55px;
+    left: 80px;
+    float: left;
+}
+
+a#rpg {
+	position: absolute;
+    float: right;
+    right: 25px;
+    top: 55px;
+}
+
+a#trivia{
+	position: absolute;
+	float: left;
+    top: 250px;
+    left: 80px;
+}
+
+a#rut {
+	position: absolute;
+	float: right;
+    right: 25px;
+    top: 250px;
+}
+
+a#rock {
+	position: absolute;
+	float: left;
+    top: 445px;
+    left: 80px;
+}
+
+span.t {
+	display: block;
+    background: teal;
+    text-align: center;
+    font-size: large;
+}
+
+form{
+	position: absolute;
+	top: 80px;
+    left: 25px;
 }
