@@ -10,31 +10,31 @@ body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0 auto;
 	float: none;
-	max-width: 960px;
-
 }
 
-div.container {
-	width: 960px;
-	flex: 1 0 auto;
-	padding: 20px;
+.container {
+	max-width: 960px;
 }
 
 a{
 	text-decoration: none;
 }
 
-div.header {
-	position: absolute;
+.cont2 {
 	max-width: 960px;
+	margin: 0 auto;
+}
+
+div.header {
 	display: block;
 	background-color: #ffffff;
-	height: 72px;
-	width: 960px;
+	height: 100px;
+	width: 100%;
 	padding: 25px;
+	margin: 0 auto;
 	border: 1px solid #cccccc;
 }
 
@@ -44,12 +44,9 @@ header.logo {
 	color: #ffffff;
 	border-color: #cccccc;
 	background-color: #4aaaa5;
-	position: relative;
 	float: left;
 	padding: 25px;
 	display: block;
-	top: 23px;
-	left: 25px;
 }
 
 li {
@@ -60,15 +57,15 @@ li {
     padding-right: 0px;
 }
 
-ul.nav {
-	position: relative;
-	float: right;
-	max-width: 330px;
-	width: 100%;
-	display: block;
-	height: 100%;
-	top: 61px;
+li:last-child {
+	border-right: none;
 }
+
+ul.nav {
+	float: right;
+	width: 261px;
+}
+
 
 li a {
 	color: #777777;
@@ -86,18 +83,13 @@ li a:hover{
 }
 
 div.main {
-	max-width: 650px;
-	max-height: 650px;
-	width: 100%;
+	width: 650px;
 	height: 400px;
-	position: relative;
 	padding: 10px;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
 	overflow: hidden;
 	float: left;
-	top: 150px;
-	left: 50px;
 	color: #777777;
 }
 
@@ -111,9 +103,7 @@ header.title {
 	color: #4aaaa5;
 	border-bottom: 1px solid #e5e5e5;
 	float: left;
-	position: absolute;
-	width: 95%;
-	padding-bottom: 15px;
+	width: 50%;
 }
 
 img#me {
@@ -145,18 +135,7 @@ p {
 	margin-bottom: 1rem;
 }
 
-div.connect {
-	float: right;
-	position: relative;
-	display: block;
-	right: -65px;
-	top: 172px;
-	max-width: 270px;
-	width: 100%;
-	background-color: #ffffff;
-	height: 150px;
-	border: 1px solid #dddddd;
-}
+
 
 header.cm {
 	padding: 10px;
@@ -201,7 +180,7 @@ footer {
 
 a#hangman {
 	position: absolute;
-	top: 55px;
+	top: 200px;
     left: 80px;
     float: left;
 }
@@ -209,28 +188,26 @@ a#hangman {
 a#rpg {
 	position: absolute;
     float: right;
-    right: 25px;
-    top: 55px;
+    top: 200px;
 }
 
 a#trivia{
 	position: absolute;
 	float: left;
-    top: 250px;
+    top: 400px;
     left: 80px;
 }
 
 a#rut {
 	position: absolute;
 	float: right;
-    right: 25px;
-    top: 250px;
+    top: 400px;
 }
 
 a#rock {
 	position: absolute;
 	float: left;
-    top: 445px;
+    top: 600px;
     left: 80px;
 }
 
@@ -243,6 +220,87 @@ span.t {
 
 form{
 	position: absolute;
-	top: 80px;
-    left: 25px;
+	top: 220px;
+  left: 25px;
+}
+
+.cont3 {
+	width: 650px;
+}
+
+/* start media quaries */
+
+/*@media all and(max-width: 980px) {
+	.container {
+		width: 100%;
+	}
+}*/
+
+div.connect {
+	float: right;
+	display: block;	width: 270px;
+	background-color: #ffffff;
+	height: 150px;
+	border: 1px solid #dddddd;
+}
+
+@media all and (max-width: 980px) {
+	.container {
+		width: 980px;
+	}
+
+}
+
+@media all and (max-width: 768px) {
+	.container {
+		width: 768px;
+	}
+
+	.header {
+		width: 768px;
+	}
+
+	main {
+		width: 100%;
+		max-width: none;
+	}
+
+	div.connect {
+		width: 100%;
+		max-width: none;
+	}
+
+	.nav {
+		width: 330px;
+	}
+}
+
+@media all and (max-width: 640px){
+	.container {
+		width: 640px;
+
+	}
+
+	.header {
+		width: 640px;
+		height: 100%
+	}
+
+	.nav{
+		width: 100%
+	}
+
+	.cont2 {
+		width: 100%;
+	}
+
+	div.main {
+		width: 640px;
+	}
+
+	div.connect {
+		width: 100%;
+		max-width: none;
+	}
+
 }
